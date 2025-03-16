@@ -1,6 +1,6 @@
 {
   "name": "s2t-ts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "speech to text",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
