@@ -1,0 +1,17 @@
+{
+  "name": "s2t-ts",
+  "version": "0.0.5",
+  "description": "speech to text",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "dwws",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/dom-speech-recognition": "^0.0.4",
+    "typescript": "^5.8.2"
+  }
+}
