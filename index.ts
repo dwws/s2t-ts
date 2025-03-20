@@ -26,26 +26,19 @@ class SpeechToTextService {
 
     this.instance.continuous = true;
     this.instance.interimResults = true;
-    this.instance.lang = "ru-RU";
+    this.instance.lang = "en-US";
 
     this.instance.onresult = this.handleResult;
     this.instance.onend = this.handleRecognitionEnd;
     this.instance.onerror = this.handleRecognitionError;
   }
 
-  public setLanguage = (lang: "ru" | "en") => {
+  public setLanguage = (lang: SpeechRecognition["lang"]) => {
     if (!this.instance || !lang) {
       return;
     }
 
-    switch (lang) {
-      case "ru":
-        this.instance.lang = "ru-RU";
-        break;
-      case "en":
-        this.instance.lang = "en-US";
-        break;
-    }
+    this.instance.lang = lang;
   };
 
   public start = () => {

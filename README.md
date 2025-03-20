@@ -34,8 +34,8 @@ STTService.onEnd = () => {
   console.log("Recognition ended");
 };
 
-// Switch language (optional)
-STTService.setLanguage("en"); // 'en' for English, 'ru' for Russian
+// Switch language (optional) // 'en-US' by default
+STTService.setLanguage("ru-RU");
 
 // Start recognition
 STTService.start();

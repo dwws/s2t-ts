@@ -1,6 +1,6 @@
 {
   "name": "s2t-ts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "speech to text",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,6 +9,10 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwws/s2t-ts"
   },
   "devDependencies": {
     "@types/dom-speech-recognition": "^0.0.4",
