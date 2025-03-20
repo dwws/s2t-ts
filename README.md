@@ -6,7 +6,7 @@ A lightweight TypeScript wrapper for the Web Speech API that provides speech rec
 
 - Browser speech recognition support detection
 - Continuous speech recognition
-- Language switching support (English/Russian)
+- Language switching support
 - TypeScript support
 - Event-based architecture
 
