@@ -7,7 +7,7 @@ declare class SpeechToTextService {
     onError: (error: string) => void;
     constructor();
     private initialize;
-    setLanguage: (lang: "ru" | "en") => void;
+    setLanguage: (lang: SpeechRecognition["lang"]) => void;
     start: () => void;
     stop: () => void;
     private handleResult;

@@ -11,14 +11,7 @@ class SpeechToTextService {
             if (!this.instance || !lang) {
                 return;
             }
-            switch (lang) {
-                case "ru":
-                    this.instance.lang = "ru-RU";
-                    break;
-                case "en":
-                    this.instance.lang = "en-US";
-                    break;
-            }
+            this.instance.lang = lang;
         };
         this.start = () => {
             if (this.instance) {
@@ -59,7 +52,7 @@ class SpeechToTextService {
         this.instance = new Recognition();
         this.instance.continuous = true;
         this.instance.interimResults = true;
-        this.instance.lang = "ru-RU";
+        this.instance.lang = "en-US";
         this.instance.onresult = this.handleResult;
         this.instance.onend = this.handleRecognitionEnd;
         this.instance.onerror = this.handleRecognitionError;
