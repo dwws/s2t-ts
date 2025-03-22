@@ -50,7 +50,7 @@ STTService.stop();
 
 - `start()`: Starts speech recognition
 - `stop()`: Stops speech recognition
-- `setLanguage(lang)`: Sets recognition language ('en' or 'ru')
+- `setLanguage(lang)`: Sets recognition language
 
 ### Properties
 
